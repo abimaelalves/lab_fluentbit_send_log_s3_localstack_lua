@@ -1,8 +1,8 @@
 {
   "@timestamp": "2025-04-04T17:29:54.999Z",
   "@version": "1",
-  "message": "Request and Response Digest",
-  "logger_name": "br.com.itau.cyberdefense.charonsecurityproxy.filters.LoggerFilterFactory",
+  "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "logger_name": "br.com.teste.cyber.proxy.filters.LoggerFilterFactory",
   "thread_name": "reactor-http-epoll-4",
   "level": "INFO",
   "level_value": 20000,
@@ -25,10 +25,10 @@
                   "443"
               ],
               "X-Amzn-Trace-Id": [
-                  "Root=1-67f01712-0de5f83921fb582740046e8d"
+                  "Root=1-asdasdasdasdasdasd-asdadsasdasdasd"
               ],
               "User-Agent": [
-                  "os=android;os_version=14;device_model=SM-S901E;device_maker=samsung;device_type=smartphone;app_id=com.itau.pers;app_version=7.097.7"
+                  "os=android;os_version=14;device_model=SM-S901E;device_maker=samsung;device_type=smartphone;app_id=com.corp.pers;app_version=7.097.7"
               ],
               "Via": [
                   "2.0 e7afda7222c88181a7bbbba6fd442d74.cloudfront.net (CloudFront)"
@@ -39,16 +39,16 @@
               "x-backtrack-client": [
                   "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
               ],
-              "x-itau-correlation-id": [
+              "x-corp-correlation-id": [
                   "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
               ],
-              "x-itau-apikey": [
+              "x-corp-apikey": [
                   "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
               ],
               "x-api-key": [
                   "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
               ],
-              "x-trackabilities-version": [
+              "x-tralala-version": [
                   "2.0.6"
               ],
               "content-type": [
@@ -96,19 +96,19 @@
               "x-origin-cf-apigw": [
                   "F4Q5+8P7nnqZsiud5YnfwruIVznVSNLZG+4itjLbXaM="
               ],
-              "X-Charon-Session": [
+              "X-Seila-Session": [
                   "5d3aeb95-5596-4970-95a0-c632fb6e810d"
               ],
               "Host": [
-                  "trackabilities-collector.api-sp.prod.aws.cloud.ihf"
+                  "tralala-collector.api-sp.ambientedevhomprod.aws.cloud.uhuuu"
               ],
-              "x-itau-correlationid": [
+              "x-corp-correlationid": [
                   "d74351ab-c497-44ed-8516-b422059a134d"
               ]
           },
           "method": "GET",
           "id": "c8174bc2-1321925",
-          "URI": "https://trackabilities-collector.api-sp.prod.aws.cloud.ihf/v1/legacy/backtrack/setup"
+          "URI": "https://tralala-collector.api-sp.ambientedevhomprod.aws.cloud.uhuuu/v1/legacy/backtrack/setup"
       },
       "response": {
           "headers": {
@@ -117,7 +117,7 @@
                   "Access-Control-Request-Method",
                   "Access-Control-Request-Headers"
               ],
-              "X-Charon-Session": [
+              "X-Seila-Session": [
                   "5d3aeb95-5596-4970-95a0-c632fb6e810d"
               ],
               "X-Content-Encoding": [
@@ -186,15 +186,15 @@
       }
   },
   "backend_version": "0.1.35",
-  "code": "I.Charon.10005",
+  "code": "I.Seila.10005",
   "logSecurity": {
-      "charonId": "mufkt2mb",
+      "SeilaId": "mufkt2mb",
       "sessionId": "5d3aeb95-5596-4970-95a0-c632fb6e810d",
       "flowId": "c8174bc2-1321925",
       "remoteIp": "177.84.247.170",
       "remotePort": "36426",
       "remoteProtocol": "https",
-      "userAgent": "os=android;os_version=14;device_model=SM-S901E;device_maker=samsung;device_type=smartphone;app_id=com.itau.pers;app_version=7.097.7",
+      "userAgent": "os=android;os_version=14;device_model=SM-S901E;device_maker=samsung;device_type=smartphone;app_id=com.corp.pers;app_version=7.097.7",
       "hostname": "bb913a7e5a70"
   }
 }
