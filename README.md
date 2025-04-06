@@ -18,8 +18,8 @@ Este laboratório demonstra como configurar um pipeline local de logs com **Flue
 1. Clone este repositório e acesse o diretório do projeto:
 
 ```bash
-git clone xx
-cd xx
+git clone https://github.com/abimaelalves/lab_fluentbit_send_log_s3_localstack_lua.git
+cd lab_fluentbit_send_log_s3_localstack_lua
 ```
 
 2. Dê permissão de execução aos scripts:
