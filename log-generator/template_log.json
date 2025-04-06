@@ -1,0 +1,200 @@
+{
+  "@timestamp": "2025-04-04T17:29:54.999Z",
+  "@version": "1",
+  "message": "Request and Response Digest",
+  "logger_name": "br.com.itau.cyberdefense.charonsecurityproxy.filters.LoggerFilterFactory",
+  "thread_name": "reactor-http-epoll-4",
+  "level": "INFO",
+  "level_value": 20000,
+  "communication": {
+      "request": {
+          "headers": {
+              "X-Real-IP": [
+                  "172.16.0.141"
+              ],
+              "X-Forwarded-For": [
+                  "177.84.247.170, 15.158.18.232, 172.16.0.141"
+              ],
+              "X-Forwarded-Proto": [
+                  "https"
+              ],
+              "Connection": [
+                  "close"
+              ],
+              "X-Forwarded-Port": [
+                  "443"
+              ],
+              "X-Amzn-Trace-Id": [
+                  "Root=1-67f01712-0de5f83921fb582740046e8d"
+              ],
+              "User-Agent": [
+                  "os=android;os_version=14;device_model=SM-S901E;device_maker=samsung;device_type=smartphone;app_id=com.itau.pers;app_version=7.097.7"
+              ],
+              "Via": [
+                  "2.0 e7afda7222c88181a7bbbba6fd442d74.cloudfront.net (CloudFront)"
+              ],
+              "X-Amz-Cf-Id": [
+                  "lPI96_SbEd167shFICt0BMH0Xub8ofic6htEY2_82fK0unEAd6d4wA=="
+              ],
+              "x-backtrack-client": [
+                  "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
+              ],
+              "x-itau-correlation-id": [
+                  "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
+              ],
+              "x-itau-apikey": [
+                  "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
+              ],
+              "x-api-key": [
+                  "b819b5e41c8e3d911afee0b3bdcfcb5094ba63b3"
+              ],
+              "x-trackabilities-version": [
+                  "2.0.6"
+              ],
+              "content-type": [
+                  "application/json"
+              ],
+              "x-device-id": [
+                  "RHB7RHDZXUKKE4AR6VQGK6IZMYUSKD4SSVP4NBZ4TEVAGPQFK53QAAAA"
+              ],
+              "x-init-id": [
+                  "b7c9a015-65a4-482c-9a6c-18986a3337fa"
+              ],
+              "adrum": [
+                  "[isMobile:true]"
+              ],
+              "adrum_1": [
+                  "[isAjax:true]"
+              ],
+              "x-accept-encoding": [
+                  "application/vnd-encode-3"
+              ],
+              "accept-encoding": [
+                  "gzip"
+              ],
+              "CloudFront-Is-Mobile-Viewer": [
+                  "true"
+              ],
+              "CloudFront-Is-Tablet-Viewer": [
+                  "false"
+              ],
+              "CloudFront-Is-SmartTV-Viewer": [
+                  "false"
+              ],
+              "CloudFront-Is-Desktop-Viewer": [
+                  "false"
+              ],
+              "CloudFront-Viewer-Country": [
+                  "BR"
+              ],
+              "CloudFront-Forwarded-Proto": [
+                  "https"
+              ],
+              "CloudFront-Viewer-ASN": [
+                  "262594"
+              ],
+              "x-origin-cf-apigw": [
+                  "F4Q5+8P7nnqZsiud5YnfwruIVznVSNLZG+4itjLbXaM="
+              ],
+              "X-Charon-Session": [
+                  "5d3aeb95-5596-4970-95a0-c632fb6e810d"
+              ],
+              "Host": [
+                  "trackabilities-collector.api-sp.prod.aws.cloud.ihf"
+              ],
+              "x-itau-correlationid": [
+                  "d74351ab-c497-44ed-8516-b422059a134d"
+              ]
+          },
+          "method": "GET",
+          "id": "c8174bc2-1321925",
+          "URI": "https://trackabilities-collector.api-sp.prod.aws.cloud.ihf/v1/legacy/backtrack/setup"
+      },
+      "response": {
+          "headers": {
+              "Vary": [
+                  "Origin",
+                  "Access-Control-Request-Method",
+                  "Access-Control-Request-Headers"
+              ],
+              "X-Charon-Session": [
+                  "5d3aeb95-5596-4970-95a0-c632fb6e810d"
+              ],
+              "X-Content-Encoding": [
+                  "application/vnd-encode-3"
+              ],
+              "Server": [
+                  "Server"
+              ],
+              "Date": [
+                  "Fri, 04 Apr 2025 17:29:54 GMT"
+              ],
+              "Content-Type": [
+                  "application/json"
+              ],
+              "x-amzn-RequestId": [
+                  "88230d00-a1a4-4681-aedf-1f30687d070e"
+              ],
+              "referrer-policy": [
+                  "no-referrer"
+              ],
+              "x-xss-protection": [
+                  "1 ; mode=block"
+              ],
+              "strict-transport-security": [
+                  "max-age=31536000 ; includeSubDomains"
+              ],
+              "x-frame-options": [
+                  "DENY"
+              ],
+              "x-amzn-Remapped-content-length": [
+                  "466"
+              ],
+              "x-envoy-upstream-service-time": [
+                  "7"
+              ],
+              "x-amz-apigw-id": [
+                  "IgiLBGVVGjQFnhw="
+              ],
+              "cache-control": [
+                  "no-cache, no-store, max-age=0, must-revalidate"
+              ],
+              "x-amzn-Remapped-server": [
+                  "istio-envoy"
+              ],
+              "x-content-type-options": [
+                  "nosniff"
+              ],
+              "expires": [
+                  "0"
+              ],
+              "X-Amzn-Trace-Id": [
+                  "Root=1-67f01712-0de5f83921fb582740046e8d"
+              ],
+              "pragma": [
+                  "no-cache"
+              ],
+              "x-amzn-Remapped-date": [
+                  "Fri, 04 Apr 2025 17:29:54 GMT"
+              ],
+              "content-length": [
+                  "466"
+              ]
+          },
+          "status_code": "200",
+          "request_time_taken": 22
+      }
+  },
+  "backend_version": "0.1.35",
+  "code": "I.Charon.10005",
+  "logSecurity": {
+      "charonId": "mufkt2mb",
+      "sessionId": "5d3aeb95-5596-4970-95a0-c632fb6e810d",
+      "flowId": "c8174bc2-1321925",
+      "remoteIp": "177.84.247.170",
+      "remotePort": "36426",
+      "remoteProtocol": "https",
+      "userAgent": "os=android;os_version=14;device_model=SM-S901E;device_maker=samsung;device_type=smartphone;app_id=com.itau.pers;app_version=7.097.7",
+      "hostname": "bb913a7e5a70"
+  }
+}

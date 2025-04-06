@@ -1,0 +1,54 @@
+
+services:
+
+  localstack:
+    container_name: localstack
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+    volumes:
+      - ./localstack:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - observability_net
+      
+  log-generator:
+    build: ./log-generator
+    volumes:
+      - ./log-generator/logs:/app/logs
+    container_name: log-generator
+    networks:
+      - observability_net
+    depends_on:
+      - localstack
+
+  fluentbit:
+    build: ./fluentbit
+    volumes:
+      - ./log-generator/logs:/fluentbit/logs
+      - ./fluentbit/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
+      - ./fluentbit/parsers.conf:/fluent-bit/etc/parsers.conf
+      - ./fluentbit/remove_raiz_field.lua:/fluent-bit/etc/remove_raiz_field.lua
+      - ./fluentbit/remove_aninhado.lua:/fluent-bit/etc/remove_aninhado.lua
+    command: /fluent-bit/bin/fluent-bit -c /fluent-bit/etc/fluent-bit.conf
+    environment:
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_REGION=us-east-1
+      - AWS_ENDPOINT=http://localstack:4566
+    depends_on:
+      - localstack
+      - log-generator
+    container_name: fluentbit
+    networks:
+      - observability_net
+
+
+networks:
+  observability_net:
+    driver: bridge
