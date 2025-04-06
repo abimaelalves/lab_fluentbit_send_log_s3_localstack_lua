@@ -4,6 +4,8 @@ Este laboratório demonstra como configurar um pipeline local de logs com **Flue
 
 - 📦 **S3 (via LocalStack)** — simulação do bucket AWS
 
+Script lua foi desenvolvido para poder filtrar os campos que desejamos excluir, tanto na raiz e aninhados
+
 ---
 
 ## ✅ Pré-requisitos
